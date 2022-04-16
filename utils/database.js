@@ -17,6 +17,7 @@ exports.query = async function(sql, params) {
         await conn.end()
         return res;
     } catch(err) {
+        console.log(err)
         throw err;
     }
 }

@@ -16,7 +16,6 @@ app.use(express.json());
 // Setting up auth routes
 require('./routes/register')(app); // -> /auth/register
 require('./routes/login')(app); // -> /auth/login
-require('./routes/logout')(app); // -> /auth/logout
 require('./routes/verification')(app); // -> /auth/verification/[id]
 
 app.listen(process.env.PORT || 3000, () => { console.log("BitGrades Authentication API is running at http://localhost:" + (process.env.PORT || 3000)) });
