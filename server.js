@@ -7,6 +7,8 @@
     For any others questions, please contact : support@bitgrades.app
 */
 
+// This is a Dev version, please be advise there might be somes bugs.
+
 const express = require('express');
 
 const app = express();
