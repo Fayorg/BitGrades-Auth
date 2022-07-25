@@ -18,4 +18,4 @@ require('./routes/register')(app); // -> /auth/register
 require('./routes/login')(app); // -> /auth/login
 require('./routes/verification')(app); // -> /auth/verification/[id]
 
-app.listen(process.env.PORT || 3000, () => { console.log("BitGrades Authentication API is running at http://localhost:" + (process.env.PORT || 3000)) });
+app.listen(process.env.PORT || 3000, () => { console.log("[BitGrades-Authentication] API is running at http://localhost:" + (process.env.PORT || 3000)) });
