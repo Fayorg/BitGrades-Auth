@@ -31,7 +31,7 @@ module.exports = (app) => {
             }
 
             // Creating JWT token
-            let token = jwt.sign(jwtUser, process.env.JWT_TOKEN, { expiresIn: "5s" });
+            let token = jwt.sign(jwtUser, process.env.JWT_TOKEN, { expiresIn: "3600s" });
 
             // Check if user is configured
             if(!user[0].IsConfigured) { 
